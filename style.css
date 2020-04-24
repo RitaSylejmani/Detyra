@@ -1,0 +1,217 @@
+*{ margin:0; padding:0; 
+}
+
+.box{
+    background:#000 url(Business_.jpg);
+    color: #fff;
+    height: 400px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-repeat: repeat;
+    background-size: cover;
+    position: relative;
+    justify-content: center;
+   
+}
+.color{
+    width: 100%;
+    height: 100%;
+    background: blue;
+    opacity: .4;
+    position: absolute;
+}
+
+.foto1{
+  position: relative;
+  width: 1349px;
+  height:349px;
+  margin: 0 auto;}
+
+.ft{
+  color:white;
+  position: absolute;
+  top: 19%;
+  width: 100%;
+  text-align: center;}
+
+.st{
+  color:white;
+  position: absolute;
+  top: 22%;
+  width: 100%;
+  text-align: center;
+  display: flexbox;
+}
+.button1{
+  position: absolute;
+  top: 35%;
+  left: 43%;
+  background-color:white;
+  font-size: 10px;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 15px;
+}
+.button2{
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  background-color:white;
+  font-size: 10px;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 15px;
+}
+
+.packet img{
+    width: 60px;
+    height: 60px;
+    margin-left: 90px;
+  }
+  .packet{
+    width: 250px;
+    height: 200px;
+  }
+  .topics{
+  position: relative;
+  margin-left: 240px;
+  height: 300px;
+  width: 100%;
+  }
+  .topics .packet{
+  
+    float: left;
+    position: static;
+    margin: 20px;
+  }
+  .packet h4{
+    margin-top: 10px;
+    text-align: center;
+  }
+  .side p{
+    text-align: center;
+  }
+
+.header{
+    background:url(Business_.jpg);
+    color: #fff;
+    height: 300px;
+    width: 1200px;
+    padding: 25px;
+    display: flex;
+    align-items: center;
+    background-repeat: repeat;
+    background-size: contain;
+    position: relative;
+    justify-content: center;
+}
+
+.ngjyra{
+    width: 100%;
+    height: 100%;
+    background: blue;
+    opacity: .4;
+    position: absolute;   
+}
+
+.letter{
+    text-align: center;
+    font-family: "Lucida Console", Courier, monospace;
+    }
+
+    .packet2 img{
+        width: 60px;
+        height: 60px;
+        margin: 30px 98px 30px 60px;
+      }
+      .packet2{
+        width: 150px;
+        height: 200px;
+      }
+      .topics2{
+      position: relative;
+      margin-left: 240px;
+      height: 300px;
+      width: 100%;
+      }
+      .topics2 .packet2{
+      
+        float: left;
+        position: static;
+        margin: 20px;
+      }
+      .packet2 h4{
+        margin-top: 10px;
+        text-align: center;
+      }
+      .packet2 p{
+        text-align: center;
+      }
+   
+      .mind-contanier{
+        background:lightgray;
+        color: lightgray;
+        height: 400px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        background-repeat: repeat;
+        background-size: cover;
+        position: relative;
+        justify-content: center;
+    }
+    .contanier{
+        text-align: right;
+        color: black;
+        justify-content: right;
+    }
+   
+    .buttoon{
+        padding: 4px 4px;
+        cursor: pointer;
+        text-align: center;
+        background-color:darkviolet;
+        border: none;
+        border-radius: 15px;
+    }
+    
+    
+    .packet3{
+        margin: 50px 550px 30px 30px;
+      }
+      .avatar img{
+        width: 100px;
+        height: 100px;
+        margin: 30px 98px 30px 60px;
+      }
+      .avatar{
+        width: 150px;
+        height: 200px;
+      }
+      .topics3{
+      position: relative;
+      margin-left: 240px;
+      height: 300px;
+      width: 100%;
+      }
+      .topics3 .avatar{
+        float: left;
+        position: static;
+        margin: 20px;
+      }
+      .avatar h4{
+        margin-top: 30px;
+        text-align: center;
+      }
+      .avatar p{
+        text-align: center;
+      }
+      .foto4{
+        position: relative;
+        width: 1349px;
+        height:150px;
+        margin: 0 auto;
+      }
