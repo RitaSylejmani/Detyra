@@ -1,217 +1,185 @@
-*{ margin:0; padding:0; 
-}
 
-.box{
-    background:#000 url(Business_.jpg);
-    color: #fff;
-    height: 400px;
-    width: 100%;
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: "Roboto";
+    outline: none;
+    border: none;
+}
+html,body{
+    height: 100%;
+    background: #00ffbf;
+}
+.algin{
+    height: 100%;
     display: flex;
     align-items: center;
-    background-repeat: repeat;
-    background-size: cover;
-    position: relative;
     justify-content: center;
-   
+    flex-direction: column;
+    padding-bottom: 8px;
 }
-.color{
-    width: 100%;
-    height: 100%;
-    background: blue;
-    opacity: .4;
-    position: absolute;
-}
-
-.foto1{
-  position: relative;
-  width: 1349px;
-  height:349px;
-  margin: 0 auto;}
-
-.ft{
-  color:white;
-  position: absolute;
-  top: 19%;
-  width: 100%;
-  text-align: center;}
-
-.st{
-  color:white;
-  position: absolute;
-  top: 22%;
-  width: 100%;
-  text-align: center;
-  display: flexbox;
-}
-.button1{
-  position: absolute;
-  top: 35%;
-  left: 43%;
-  background-color:white;
-  font-size: 10px;
-  padding: 10px 20px;
-  border: none;
-  cursor: pointer;
-  border-radius: 15px;
-}
-.button2{
-  position: absolute;
-  top: 35%;
-  left: 50%;
-  background-color:white;
-  font-size: 10px;
-  padding: 10px 20px;
-  border: none;
-  cursor: pointer;
-  border-radius: 15px;
-}
-
-.packet img{
-    width: 60px;
-    height: 60px;
-    margin-left: 90px;
-  }
-  .packet{
-    width: 250px;
-    height: 200px;
-  }
-  .topics{
-  position: relative;
-  margin-left: 240px;
-  height: 300px;
-  width: 100%;
-  }
-  .topics .packet{
-  
-    float: left;
-    position: static;
-    margin: 20px;
-  }
-  .packet h4{
+.card {
     margin-top: 10px;
-    text-align: center;
-  }
-  .side p{
-    text-align: center;
-  }
+    height: 100%;
+    max-height: 446px;
+    width: 396px;
+    background: #008080;
+    border: 1px solid #373737;
+    border-radius: 10px;
+    overflow: hidden;
+   transition: max-height 0.2s;
+}
+.extend{
+    max-height: 480px;
 
-.header{
-    background:url(Business_.jpg);
-    color: #fff;
-    height: 300px;
-    width: 1200px;
-    padding: 25px;
+}
+.head{
+    width: 100%;
+    display: flex;
+    height: 50px;
+    border-bottom: 1px solid #373737;
+    justify-content: space-between;
+}
+.head a{
+    height: 100%;
+    padding: 0 28px;
     display: flex;
     align-items: center;
-    background-repeat: repeat;
-    background-size: contain;
-    position: relative;
     justify-content: center;
+    color: rgb(140,140,140);
+    font-size: 20px;
+    font-weight: 500;
+}
+.head .selected{
+    position: relative;
+    color: rgb(140,140,140);
+    font-weight: 200;
+
+}
+.head .selected:after{
+    position: absolute;
+    content: "";
+    bottom: 0;
+    left: 0;
+    height: 5px;
+    width: 100%;
+    background: #373737;
+    border-radius: 99px 99px 0 0;
 }
 
-.ngjyra{
+.tabs{
+    height: calc(100% - 72px);
+    display: flex;
+}
+form{
     width: 100%;
     height: 100%;
-    background: blue;
-    opacity: .4;
-    position: absolute;   
+    flex-shrink: 0;
+    padding:44px 38px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    right: 0;
+    transition: right 0.2s;
+}
+.extend form{
+    right: 100%;
+}
+.inputs{
+width: 100%;
+padding-top: 6px;
+}
+.input{
+    position: relative;
+    margin-bottom: 20px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.input input{
+    width: 100%;
+    font-size: 17px;
+    background-color: rgb(173, 219, 177);;
+    border-radius: 8px;
+    padding:16px 18px 16px 51px;
+    columns: rbg(220,220,220);
+
+}
+.checkbox{
+    height: 40px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+}
+.checkbox input{
+    position: absolute;
+    opacity: 0;
+    height: 0;
+    width: 0;
+
+}
+.checkbox span{
+    display: flex;
+    align-items: center;
+    color: black;
+    font-size: 16px;
+    user-select: none;
+}
+.checkbox span:before{
+    content: "";
+    width: 22px;
+    height: 22px;
+    border-radius: 6px;
+    margin-right: 16px;
+    background-color: rgb(173, 219, 177);
 }
 
-.letter{
-    text-align: center;
-    font-family: "Lucida Console", Courier, monospace;
-    }
+.card button{
+    display: block;
+    background-color:rgb(173, 219, 177);
+    padding: 14px 52px;
+    border-radius: 12px;
+    color: gray;;
 
-    .packet2 img{
-        width: 60px;
-        height: 60px;
-        margin: 30px 98px 30px 60px;
-      }
-      .packet2{
-        width: 150px;
-        height: 200px;
-      }
-      .topics2{
-      position: relative;
-      margin-left: 240px;
-      height: 300px;
-      width: 100%;
-      }
-      .topics2 .packet2{
-      
-        float: left;
-        position: static;
-        margin: 20px;
-      }
-      .packet2 h4{
-        margin-top: 10px;
-        text-align: center;
-      }
-      .packet2 p{
-        text-align: center;
-      }
-   
-      .mind-contanier{
-        background:lightgray;
-        color: lightgray;
-        height: 400px;
-        width: 100%;
-        display: flex;
-        align-items: center;
-        background-repeat: repeat;
-        background-size: cover;
-        position: relative;
-        justify-content: center;
-    }
-    .contanier{
-        text-align: right;
-        color: black;
-        justify-content: right;
-    }
-   
-    .buttoon{
-        padding: 4px 4px;
-        cursor: pointer;
-        text-align: center;
-        background-color:darkviolet;
-        border: none;
-        border-radius: 15px;
-    }
-    
-    
-    .packet3{
-        margin: 50px 550px 30px 30px;
-      }
-      .avatar img{
-        width: 100px;
-        height: 100px;
-        margin: 30px 98px 30px 60px;
-      }
-      .avatar{
-        width: 150px;
-        height: 200px;
-      }
-      .topics3{
-      position: relative;
-      margin-left: 240px;
-      height: 300px;
-      width: 100%;
-      }
-      .topics3 .avatar{
-        float: left;
-        position: static;
-        margin: 20px;
-      }
-      .avatar h4{
-        margin-top: 30px;
-        text-align: center;
-      }
-      .avatar p{
-        text-align: center;
-      }
-      .foto4{
-        position: relative;
-        width: 1349px;
-        height:150px;
-        margin: 0 auto;
-      }
+}
+.checkbox:hover input ~ span:before {
+	background-color: rgb(50,50,50);
+}
+
+.checkbox input:checked ~ span:before {
+	
+	background-size: cover;
+}
+
+.buttonN {
+    background-color:#008080; 
+    border: none;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    text-decoration: center;
+    display: inline-block;
+    font-size: 10px;
+    margin: 4px 2px;
+    cursor: pointer;
+    position: relative;
+    left: 70%;
+  }
+  .button1 {border-radius: 12px;}
+  .button2 {border-radius: 12px;}
+  .button3 {border-radius: 12px;}
+
+  .footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+
+
